@@ -1468,10 +1468,10 @@ http-errors@2.0.0:
     statuses "2.0.1"
     toidentifier "1.0.1"
 
-http-status@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.npmjs.org/http-status/-/http-status-1.6.2.tgz"
-  integrity sha512-oUExvfNckrpTpDazph7kNG8sQi5au3BeTo0idaZFXEhTaJKu7GNJCLHI0rYY2wljm548MSTM+Ljj/c6anqu2zQ==
+http-status@^1.7.4:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/http-status/-/http-status-1.7.4.tgz#7bb7f6b511e0bf5e9e20fb5aa00666f09d1f2615"
+  integrity sha512-c2qSwNtTlHVYAhMj9JpGdyo0No/+DiKXCJ9pHtZ2Yf3QmPnBIytKSRT7BuyIiQ7icXLynavGmxUqkOjSrAuMuA==
 
 http@^0.0.1-security:
   version "0.0.1-security"
@@ -2577,7 +2577,7 @@ triple-beam@^1.3.0:
 
 ts-node@^10.9.2:
   version "10.9.2"
-  resolved "https://registry.npmjs.org/ts-node/-/ts-node-10.9.2.tgz"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.9.2.tgz#70f021c9e185bccdca820e26dc413805c101c71f"
   integrity sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==
   dependencies:
     "@cspotcode/source-map-support" "^0.8.0"
