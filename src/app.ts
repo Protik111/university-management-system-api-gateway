@@ -16,7 +16,7 @@ app.use(cookieParser());
 
 app.use(globalExceptionHandler);
 app.get('/', (req, res) => {
-  console.log('Server is running');
+  res.json({ message: 'Server is running' });
 });
 
 app.use((req, res, next) => {

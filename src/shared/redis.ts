@@ -1,12 +1,13 @@
 import { createClient } from 'redis';
 import logger from './logger';
+import config from '../config';
 
 let redisClient = createClient({
-  url: 'redis://localhost:6379'
+  url: config.redis.url
 });
 
 redisClient.on('error', (err) => logger.error('RedisError', err));
-redisClient.on('error', (data) => logger.info('Redis connected'));
+redisClient.on('connect', (data) => logger.info('Redis connected'));
 
 const connect = async (): Promise<void> => {
   await redisClient.connect();
