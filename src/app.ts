@@ -12,12 +12,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 
-// app.use('/api/v1', routes);
+app.use('/api/v1', routes);
 
 app.use(globalExceptionHandler);
-app.get('/', (req, res) => {
-  res.json({ message: 'Server is running' });
-});
+// app.get('/', (req, res) => {
+//   res.json({ message: 'Server is running' });
+// });
 
 app.use((req, res, next) => {
   res.status(httpStatus.NOT_FOUND).json({
